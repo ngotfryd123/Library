@@ -8,8 +8,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap:50px;
 
 }
 #book-container{
-    background:beige;
+    background:none;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 5px;
 }

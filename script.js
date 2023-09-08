@@ -14,7 +14,7 @@ function displayBook(){
     //display on table or on their own card
     //helps to add a few books manually in the array to see how they display
   document.getElementById("book-container").innerHTML="";
-  for(let i = (myLibrary.length-1); i >-1; i-- ){
+  for(let i = 0; i < myLibrary.length; i++ ){
 
         let book = myLibrary[i];
         const container = document.getElementById("book-container");
@@ -22,18 +22,33 @@ function displayBook(){
         const books = document.createElement("div");
         container.appendChild(books);
         books.style.backgroundImage="url('istockphoto-647809752-612x612.jpg')";
+        books.style.backgroundSize="100% 100%";
+        const bookBtn = document.createElement("button");
+        books.appendChild(bookBtn);
+        bookBtn.style.backgroundImage="url('4-46003_red-x-button-png-transparent-png.png')";
+        bookBtn.style.backgroundSize="100% 100%";
+        bookBtn.style.width="10px";
+        bookBtn.style.height="15px";
+        bookBtn.addEventListener('click', function(i){
+          myLibrary.splice(i, 1);
+          displayBook();})
         const btitle = document.createElement("div");
         const bauthor = document.createElement("div");
         const bpages = document.createElement("div");
         const bread = document.createElement("div");
         books.appendChild(btitle);
         btitle.innerHTML = `<p>${book.title}</p>`;
+        btitle.style.color="yellow";
         books.appendChild(bauthor);
         bauthor.innerHTML = `<p>${book.author}</p>`;
+        bauthor.style.color="yellow";
         books.appendChild(bpages);
         bpages.innerHTML = `<p>${book.pages}</p>`;
+        bpages.style.color="yellow";
         books.appendChild(bread);
         bread.innerHTML = `<p>${book.read}</p>`;
+        bread.style.color="yellow";
+
 }}
 
 function addBookToLibrary() {

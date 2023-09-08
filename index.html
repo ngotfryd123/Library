@@ -9,8 +9,56 @@
 
 </head>
 <body>
-    <div id="book-container">
-    </div>
+
+    <button id="+bookBtn" onclick="asd(1)" style="
+    background-color: cornflowerblue;
+    width: 116px;
+    height: 56px;
+    border-radius: 35px;
+    font-weight: bolder;
+">Add Book</button>
     
+    <form id="form">
+        <div style="
+    color: white;
+">
+          <label for="title" style="
+    display: flow;
+">Book Title:</label>
+          <input type="text" name="title" id="title">
+        </div>
+      
+        <div style="
+    color: white;
+">
+          <label for="author" style="
+    display: flow;
+">Author:</label>
+          <input type="text" name="author" id="author">
+        </div>
+      
+        <div style="
+    color: white;
+">
+          <label for="pages" style="
+    display: flow;
+">Pages:</label>
+          <input type="number" name="pages" id="pages">
+        </div>
+
+        <div style="
+    color: white;
+">
+            <input type="radio" id="read" name="read">
+            <label for="read" style="
+">Read yet?</label>
+        </div>
+      
+        <button type="submit">Submit</button>
+      </form>
+
+      <div id="book-container"></div>
+
+
 </body>
 </html>
