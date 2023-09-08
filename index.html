@@ -3,55 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Library</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
 
 </head>
 <body>
 
-    <button id="+bookBtn" onclick="asd(1)" style="
-    background-color: cornflowerblue;
-    width: 116px;
-    height: 56px;
-    border-radius: 35px;
-    font-weight: bolder;
-">Add Book</button>
+    <button id="addBtn" onclick="asd(1)">Add Book</button>
     
     <form id="form">
-        <div style="
-    color: white;
-">
-          <label for="title" style="
-    display: flow;
-">Book Title:</label>
+        <div style="color: white;">
+          <label for="title" style="display: flow;">Book Title:</label>
           <input type="text" name="title" id="title">
         </div>
       
-        <div style="
-    color: white;
-">
-          <label for="author" style="
-    display: flow;
-">Author:</label>
+        <div style="color: white;">
+          <label for="author" style="display: flow;">Author:</label>
           <input type="text" name="author" id="author">
         </div>
       
-        <div style="
-    color: white;
-">
-          <label for="pages" style="
-    display: flow;
-">Pages:</label>
+        <div style="color: white;">
+          <label for="pages" style="display: flow;">Pages:</label>
           <input type="number" name="pages" id="pages">
         </div>
 
-        <div style="
-    color: white;
-">
+        <div style="color: white;">
             <input type="checkbox" id="read" name="read">
-            <label for="read" style="
-">Read yet?</label>
+            <label for="read">Read yet?</label>
         </div>
       
         <button type="submit">Submit</button>

@@ -18,3 +18,10 @@ body{
     grid-auto-flow: column;
     grid-gap: 5px;
 }
+#addBtn{
+    background-color: cornflowerblue;
+    width: 116px;
+    height: 56px;
+    border-radius: 35px;
+    font-weight: bolder;
+}

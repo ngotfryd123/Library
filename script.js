@@ -25,8 +25,11 @@ function displayBook(){
         let book = myLibrary[i];
         console.log(i);
         const container = document.getElementById("book-container");
-
         const books = document.createElement("div");
+        books.style.display="flex";
+        books.style.flexDirection="column";
+        books.style.alignItems="center";
+        books.style.minWidth="100px";
         container.appendChild(books);
         books.style.backgroundImage="url('istockphoto-647809752-612x612.jpg')";
         books.style.backgroundSize="100% 100%";
