@@ -45,7 +45,8 @@ function displayBook(){
         const bpages = document.createElement("div");
         const bread = document.createElement("button");
         bread.style.width="50px";
-        bread.style.height="25px";
+        bread.style.minHeight="25px";
+        bread.style.backgroundColor="blue";
         bread.addEventListener('click', function(){
           toggleRead(i);
         });
@@ -53,13 +54,13 @@ function displayBook(){
         btitle.innerHTML = `<p>${book.title}</p>`;
         btitle.style.color="yellow";
         books.appendChild(bauthor);
-        bauthor.innerHTML = `<p>${book.author}</p>`;
+        bauthor.innerHTML = `<p>by ${book.author}</p>`;
         bauthor.style.color="yellow";
         books.appendChild(bpages);
-        bpages.innerHTML = `<p>${book.pages}</p>`;
+        bpages.innerHTML = `<p>pages: ${book.pages}</p>`;
         bpages.style.color="yellow";
         books.appendChild(bread);
-        bread.innerHTML = `${book.read}`;
+        book.read === true ? bread.innerHTML = `Read` : bread.innerHTML = `Not Read`;
         bread.style.color="yellow";
 }}
 
